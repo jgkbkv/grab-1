@@ -59,7 +59,7 @@ class MyBot(BaseBot):
     async def on_start(self, session_metadata: SessionMetadata) -> None:
       print("hi im alive?")
       try:
-        await self.highrise.walk_to( Position(x=3.2, y=0, z=1.7, facing='FrontRight'))
+        await self.highrise.walk_to( Position(x=3.2, y=0.25, z=1.7, facing='FrontRight'))
       except Exception as e:
         print(f"An exception occurred: {e}")
 
